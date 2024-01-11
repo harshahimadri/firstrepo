@@ -11,3 +11,17 @@ class calculateImpl implements calculate{
         return a-b;
     } 
 }
+class CalculateDriver {
+    public static void main(String[] args){
+        calculateImpl s = new calculateImpl();
+        Scanner c = new Scanner(System.in);
+        System.out.println("Enter num 1");
+        int n1 = c.nextInt();
+        System.out.println("Enter num 2");
+        int n2 = c.nextInt();
+
+        System.out.println(c.sum(n1,n2));
+        System.out.println(c.diff(n1,n2));
+
+    }
+}
